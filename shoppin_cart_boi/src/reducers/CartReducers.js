@@ -6,6 +6,6 @@ export default(state = [], action) => {
         return state
     }
 }
-//if user changes anything, the action is sent to the reducer, 
+//1)if user changes anything, the action is sent to the reducer, 
 //the reducer sends the item to the store to alter the state. 
 //if no action takes place, the initial state is returned.
