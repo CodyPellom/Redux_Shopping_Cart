@@ -2,9 +2,11 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-
+import { Cart } from '../containers/Cart'
 import * as CartActions from '../actions/CartActions'
 import Shelf from '../components/Shelf'
+
+
 
 class Cart extends Component {
   constructor(props){
@@ -13,7 +15,7 @@ class Cart extends Component {
   }
 
   render() {
-    const CartItems = this.props.cart.map( (item, id) => {
+    const CartItems = this.props.Cart.map( (item, id) => {
       return (
         <li key={id}>
           {item}
